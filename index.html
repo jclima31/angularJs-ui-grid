@@ -1,0 +1,30 @@
+<!doctype html>
+<html ng-app="app">
+  <head>
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.7.0/angular.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.7.0/angular-touch.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.7.0/angular-animate.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.7.0/angular-aria.js"></script>
+    <script src="http://ui-grid.info/docs/grunt-scripts/csv.js"></script>
+    <script src="http://ui-grid.info/docs/grunt-scripts/pdfmake.js"></script>
+    <script src="http://ui-grid.info/docs/grunt-scripts/vfs_fonts.js"></script>
+    <script src="http://ui-grid.info/docs/grunt-scripts/lodash.min.js"></script>
+    <script src="http://ui-grid.info/docs/grunt-scripts/jszip.min.js"></script>
+    <script src="http://ui-grid.info/docs/grunt-scripts/excel-builder.dist.js"></script>
+    <script src="ui-grid/release/ui-grid.js"></script>
+    <link rel="stylesheet" href="ui-grid//release/ui-grid.css" type="text/css">
+    <script src="app.js"></script>
+    <style type="text/css">
+    	.grid {
+		  width: 500px;
+		  height: 250px;
+		}
+    </style>
+  </head>
+  <body>
+    <div ng-controller="OrdenarCtrl">
+    	<!--UI grid renderiza as grids na tela-->
+      <div id="grid1" ui-grid="gridOptions" class="grid"></div>
+    </div>
+  </body>
+</html>
